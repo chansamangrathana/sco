@@ -1,5 +1,8 @@
+'use client'
 import SideBarComponent from "@/components/sidebar/SideBarComponent";
 import "@/app/globals.css";
+import { MenuIcon } from "@/components/icons/FontAwsome";
+
 export default function AdminLayout({
 	children,
 }: Readonly<{
@@ -7,11 +10,12 @@ export default function AdminLayout({
 }>) {
 	return (
 		<html>
-			<body>
-				<aside className="fixed h-screen">
+			<body className="flex">
+				<MenuIcon classname="h-8 w-8"/>
+				<aside className=" h-screen hidden lg:block">
 					<SideBarComponent />
 				</aside>
-				<main className="">{children}</main>
+				<main className="flex-1">{children}</main>
 			</body>
 		</html>
 	);
