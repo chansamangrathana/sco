@@ -39,7 +39,7 @@ export default function Dashboard() {
       name:"Action",
       selector:(row):any=><div>
         <button className="text-white mx-2  bg-purple-700 p-3 rounded-2xl">view</button>
-        <button className="text-white mx-2  bg-yellow-500 p-3 rounded-2xl">Edit</button>
+        <button className="text-white mx-2  bg-yellow-400 p-3 rounded-2xl">Edit</button>
         <button className="text-white mx-2  bg-red-700 p-3 rounded-2xl">Delete</button>
 
       </div>
