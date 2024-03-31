@@ -2,6 +2,6 @@ import React from 'react'
 
 export default function Button() {
   return (
-    <button className='p-4 w-16 bg-blue-700'>Button</button>
+    <button className='h-screen flex flex-col p-4 w-26'>HELLO</button>
   )
 }
