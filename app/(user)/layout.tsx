@@ -7,6 +7,7 @@ import { ErrorBoundary } from "next/dist/client/components/error-boundary";
 
 import { inter, suwannaphum, localCustomFont } from "./fonts";
 import { Metadata } from "next";
+import FooterComponent from "@/components/footer/FooterComponenet";
 
 export const metadata: Metadata = {
 	title: "Hello CSTAD ",
@@ -25,13 +26,18 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body className={`${inter.variable} ${suwannaphum.variable} ${localCustomFont.variable}`}>
+			<body  >
 				<header>
 					<NavbarComponent />
 				</header>
+				
 				<ErrorBoundary errorComponent={Error}>
 					<Suspense fallback={<Loading />}>{children}</Suspense>
 				</ErrorBoundary>
+				<footer >
+					<FooterComponent/>
+					</footer>
+				
 			</body>
 		</html>
 	);
