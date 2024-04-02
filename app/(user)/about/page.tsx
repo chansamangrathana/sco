@@ -10,7 +10,6 @@ import {
   BiShowAlt,
 } from "react-icons/bi";
 import { FaTerminal } from "react-icons/fa6";
-import Image from "next/image";
 import { GoGoal } from "react-icons/go";
 import { List } from "flowbite-react";
 import { BsChat } from "react-icons/bs";
