@@ -1,6 +1,7 @@
 "use client";
 import CardProduct from "@/components/card/CardProduct";
 
+
 import { useRouter } from "next/navigation";
 import React, { useEffect, useState } from "react";
 
@@ -16,7 +17,7 @@ export default function Service() {
 			.then((data) => setProducts(data));
 	}, []);
 	return (
-		<div className="h-screen mt-6 container mx-auto grid grid-cols-5 grid-flow-row gap-4">
+		<div className=" mt-6 container mx-auto grid grid-cols-5 grid-flow-row gap-4">
 			{products.map((product: any, index) => (
 				<CardProduct
 					onClick={() => router.push(`/service/${product.id}`)}

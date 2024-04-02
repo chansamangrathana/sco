@@ -6,14 +6,14 @@ import { BsDribbble, BsFacebook, BsGithub, BsInstagram, BsTwitter } from "react-
 
 export default function FooterComponenet() {
   return (
-    <Footer  container>
+    <Footer >
       <div className="w-full">
         <div className="grid w-full justify-between sm:flex sm:justify-between md:flex md:grid-cols-1">
           <div>
             <Footer.Brand
-              href="https://flowbite.com"
+              href=""
               src="https://istad.co/resources/img/CSTAD_120.png"
-              alt="Flowbite Logo"
+              alt=" Logo"
               name="CSTAD"
             />
           </div>
