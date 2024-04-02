@@ -40,7 +40,7 @@ export default async function Detail(props: Props) {
 	let data = await getData(props.params.id);
 
 	return (
-		<div className="h-screen grid place-content-center">
+		<div className=" ">
 			<CardComponent
 				title={data?.title || "NoTitle"}
 				description={data?.description || "No Description"}

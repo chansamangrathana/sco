@@ -16,7 +16,7 @@ export default function CardProduct({
 	onClick,
 }: PropsType) {
 	return (
-		<Card
+		<Card 
 			onClick={onClick}
 			className="max-w-sm cursor-pointer "
 			renderImage={() => (
